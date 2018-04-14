@@ -7,7 +7,7 @@ var User = sequelize.define('User', {
   username: Sequelize.STRING
 });
 app.get('/users',function(req,res){
-users.User.find(username,then(function(err,data)){
+users.find(username,then(function(err,data)){
 	if(err){
 	console.log(err);	
 	}else{
